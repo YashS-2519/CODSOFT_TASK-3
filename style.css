@@ -1,0 +1,105 @@
+.flex{
+    display: flex;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 700;
+}
+
+.container{
+    background: radial-gradient(circle, rgba(148,187,233,1) 0%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.calculator{
+    background-color: #EDF1F4;
+    width: 40vh;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+form{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.screen{
+    height: 20%;
+    width: 100%;
+}
+
+.screen input{
+    background-color: #EDF1F4;
+    width: 100%;
+    height: 100%;
+    border: 0px solid;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.screen input:focus{
+    outline: none;
+}
+
+.line{
+    width: 85%;
+    border: none;
+    border-top: 0.1rem solid #DBE0E4;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.button{
+    background-color: #E0EAF3;
+    color: #116492;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    margin: 5px;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.equl{
+    background-color: #309BBF;
+    color: white;
+}
+
+.clear{
+    color: #C73533;
+}
+
+.button:active{
+    background-color: #B3BCC3;
+    font-size: 1rem;
+    box-shadow: none;
+}
+
+.equl:active{
+    background-color: #277C99;
+    font-size: 1rem;
+}
