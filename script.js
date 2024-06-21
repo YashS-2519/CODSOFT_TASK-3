@@ -127,14 +127,14 @@ buttonArray.forEach((button) => {
             }
         }
         else if ((buttonValue == '*' || buttonValue == '/' || buttonValue == '+') && (screenValue == '-' || screenValue == '')) {
-        console.log('Invalid Format');
-    }
-    else {
-        screenValue += buttonValue;
-        display.value = screenValue;
-        display.scrollLeft = display.scrollWidth;
-    }
+            console.log('Invalid Format');
+        }
+        else {
+            screenValue += buttonValue;
+            display.value = screenValue;
+            display.scrollLeft = display.scrollWidth;
+        }
 
-    console.log(buttonValue);
-});
+        console.log(buttonValue);
+    });
 });
