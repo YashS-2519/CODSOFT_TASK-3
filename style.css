@@ -54,6 +54,7 @@ form{
     padding: 10px;
     font-size: 2rem;
     text-align: right;
+    overflow: auto;
 }
 
 .screen input:focus{
