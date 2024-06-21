@@ -18,7 +18,6 @@ function infixToPostfix() {
     while (i < screenValue.length) {
         let char = screenValue[i];
 
-        // Handle numbers (including decimals)
         if ((char >= '0' && char <= '9') || char === '.') {
             let numStr = '';
             while ((char >= '0' && char <= '9') || char === '.') {
@@ -31,21 +30,20 @@ function infixToPostfix() {
                 }
             }
             output.push(numStr);
-            continue; // Skip the increment of i to avoid skipping the next character
+            continue;
         }
 
-        // Handle opening parenthesis
         if (char === '(') {
             stack.push(char);
         }
-        // Handle closing parenthesis
+
         else if (char === ')') {
             while (stack.length && stack[stack.length - 1] !== '(') {
                 output.push(stack.pop());
             }
-            stack.pop(); // Remove the '(' from the stack
+            stack.pop();
         }
-        // Handle operators
+
         else if (precedence[char]) {
             while (stack.length && precedence[stack[stack.length - 1]] >= precedence[char]) {
                 output.push(stack.pop());
@@ -56,7 +54,6 @@ function infixToPostfix() {
         i++;
     }
 
-    // Pop all the remaining operators in the stack
     while (stack.length) {
         output.push(stack.pop());
     }
