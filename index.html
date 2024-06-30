@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Calculator</title>
 </head>
 
@@ -18,12 +19,16 @@
 
                 <div class="screen">
                     <input class="resultScreen" type="text" name="ans" readonly>
+                    <div class="mid-result">
+                        <div class="mid-ans"></div>
+                        <i class="ri-delete-back-2-line backspace"></i>
+                    </div>
                 </div>
 
                 <hr class="flex line">
 
                 <div class="row">
-                    <input type="button" title="clear" class="button clear" value="C" >
+                    <input type="button" title="clear" class="button clear" value="C">
                     <input type="button" title="open bracket" class="button" value="(">
                     <input type="button" title="close bracket" class="button" value=")">
                     <input type="button" title="divide" class="button" value="/">
@@ -61,7 +66,8 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="script2.js"></script>
 </body>
 
 </html>

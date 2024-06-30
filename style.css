@@ -49,7 +49,7 @@ form{
 .screen input{
     background-color: #EDF1F4;
     width: 100%;
-    height: 100%;
+    height: 60%;
     border: 0px solid;
     padding: 10px;
     font-size: 2rem;
@@ -59,6 +59,35 @@ form{
 
 .screen input:focus{
     outline: none;
+}
+
+.mid-result{
+    height: 40%;
+    width: 100%;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.mid-ans{
+    color: rgb(54, 54, 54);
+}
+
+.mid-result i{
+    padding: 7px;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #116492;
+}
+
+.mid-result i:active{
+    background-color: #B3BCC3;
+    font-size: 0.97rem;
 }
 
 .line{

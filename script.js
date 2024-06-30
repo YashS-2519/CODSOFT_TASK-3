@@ -135,6 +135,6 @@ buttonArray.forEach((button) => {
             display.scrollLeft = display.scrollWidth;
         }
 
-        console.log(buttonValue);
+        // console.log(buttonValue);
     });
 });
